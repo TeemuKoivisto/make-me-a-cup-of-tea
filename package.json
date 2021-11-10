@@ -7,7 +7,7 @@
     "changeset:version": "changeset version && pnpm i --lockfile-only"
   },
   "engines": {
-    "node": ">=16",
+    "node": ">=14.18",
     "pnpm": "^6.0.0"
   },
   "devDependencies": {
