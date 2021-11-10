@@ -31,7 +31,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node_version }}
-          registry_url: https://registry.npmjs.org
+          registry-url: https://registry.npmjs.org/
 
       - name: Cache pnpm dependencies
         uses: actions/cache@v2
