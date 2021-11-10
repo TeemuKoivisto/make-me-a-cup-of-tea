@@ -4,9 +4,10 @@
   "scripts": {
     "build": "pnpm build -r",
     "start": "concurrently --kill-others 'pnpm run watch --filter @make-me-a-cup-of-tea/observable' 'pnpm run watch --filter @make-me-a-cup-of-tea/utils'",
-    "changeset": "changeset",
-    "publish": "changeset publish",
-    "ci:version": "pnpx changeset version && pnpm install --no-frozen-lockfile && git add .",
+    "cs": "changeset",
+    "cs:publish": "changeset publish",
+    "cs:version": "changeset version",
+    "ci:version": "changeset version && pnpm i --lockfile-only",
     "ci:publish": "pnpm publish -r --no-git-checks --tag=next"
   },
   "engines": {
