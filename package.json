@@ -1,0 +1,19 @@
+{
+  "name": "make-me-a-cup-of-tea",
+  "type": "module",
+  "scripts": {
+    "start":  "concurrently --kill-others 'pnpm run watch --filter @make-me-a-cup-of-tea/observable' 'pnpm run watch --filter @make-me-a-cup-of-tea/utils'"
+  },
+  "engines": {
+    "node": ">=16",
+    "pnpm": "^6.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "prettier": "^2.4.1"
+  }
+}
