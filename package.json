@@ -4,8 +4,8 @@
   "scripts": {
     "build": "pnpm build -r",
     "start": "concurrently --kill-others 'pnpm run watch --filter @make-me-a-cup-of-tea/observable' 'pnpm run watch --filter @make-me-a-cup-of-tea/utils'",
-    "release": "pnpm publish --tag=next",
-    "changeset:version": "changeset version && pnpm i --lockfile-only"
+    "ci:version": "pnpm changelog && pnpx changeset version && pnpm install --no-frozen-lockfile && git add .",
+    "ci:publish": "pnpm publish -r --no-git-checks --tag=next"
   },
   "engines": {
     "node": ">=14.18",
