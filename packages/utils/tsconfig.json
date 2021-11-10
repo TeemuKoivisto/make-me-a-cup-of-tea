@@ -1,7 +1,8 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "es2018"
+    "target": "es2018",
+    "lib": ["esnext", "dom", "dom.iterable"]
   },
   "include": ["src"],
   "exclude": ["node_modules"]
