@@ -54,5 +54,7 @@ jobs:
         uses: changesets/action@master
         with:
           version: pnpm ci:version
+          commit: 'chore(changeset): version update'
+          title: 'chore(changeset): version update'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
