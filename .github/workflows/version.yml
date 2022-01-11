@@ -50,10 +50,10 @@ jobs:
       - name: Build packages
         run: pnpm build
     
-      - name: Create and publish versions
+      - name: Create versions
         uses: changesets/action@master
         with:
-          publish: pnpm ci:publish
+          version: pnpm ci:version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
