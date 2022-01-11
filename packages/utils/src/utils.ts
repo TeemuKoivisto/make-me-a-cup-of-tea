@@ -1,11 +1,4 @@
-// import crypto from 'crypto'
-
 export function uuidv4() {
-  // // Not available in all browsers (yet) https://caniuse.com/?search=crypto.randomUUID
-  // if (crypto.hasOwnProperty('randomUUID')) {
-  //   // @ts-ignore
-  //   return crypto.randomUUID()
-  // }
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
     const r = (Math.random() * 16) | 0,
       v = c == 'x' ? r : (r & 0x3) | 0x8
