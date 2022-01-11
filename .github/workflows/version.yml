@@ -1,4 +1,4 @@
-name: Create releases with changesets and publish them to NPM
+name: Create new changeset PR
 
 on:
   push:
@@ -56,4 +56,3 @@ jobs:
           version: pnpm ci:version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
