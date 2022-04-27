@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/utils
 
+## 0.0.6
+
+### Patch Changes
+
+- 23c3dc8: Fix changelog links
+
 ## 0.0.5
 
 ### Patch Changes
