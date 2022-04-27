@@ -30,7 +30,6 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
           registry-url: 'npm.pkg.github.com'
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
 
       - name: Setup caching
         uses: actions/cache@v2
