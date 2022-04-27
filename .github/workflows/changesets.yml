@@ -48,7 +48,7 @@ jobs:
       - name: Setup .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"
-            //npm.pkg.github.com/:_authToken=$NPM_TOKEN
+            @TeemuKoivisto:registry=https://npm.pkg.github.com/:_authToken=$NPM_TOKEN
           EOF
         env:
           NPM_TOKEN: ${{ secrets.GH_PAT }}

@@ -12,6 +12,7 @@
   "files": [
     "dist"
   ],
+  "repository": "https://github.com/TeemuKoivisto/make-me-a-cup-of-tea",
   "publishConfig":{
     "registry": "https://npm.pkg.github.com"
   },
