@@ -1,3 +1,8 @@
+/**
+ * Observable class to perform basic pub/sub pattern
+ * 
+ * Define events as strings eg 'update' | 'unmount' to which you can subscribe event listeners to.
+ */
 export class Observable<K = string> {
   _observers = new Map<K, Set<(...args: any[]) => void>>()
 
