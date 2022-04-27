@@ -22,6 +22,9 @@ export function generateUUID() {
   })
 }
 
+export function hello() {
+  console.log('hello world')
+}
 
 export class CustomError extends Error {
   statusCode?: number
