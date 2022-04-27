@@ -1,22 +1,22 @@
-name: 'pnpm installation'
-description: 'Install and audit dependencies for pnpm'
+name: pnpm
+description: Setup pnpm and install dependencies
 inputs:
   cache: # id of input
-    description: 'The location of the pnpm cache'
+    description: Path of the pnpm cache
     required: true
-    default: '.pnpm-store'
+    default: .pnpm-store
 
 runs:
-  using: 'composite'
+  using: composite
   steps:
-    - name: install pnpm
+    - name: Install pnpm
       run: npm i pnpm@latest -g
       shell: bash
 
-    - name: setup pnpm config
+    - name: Setup pnpm config
       run: pnpm config set store-dir ${{ inputs.cache }}
       shell: bash
 
-    - name: install dependencies
+    - name: Install dependencies
       run: pnpm install --frozen-lockfile
       shell: bash
