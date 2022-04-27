@@ -2,4 +2,4 @@
 
 Just an example repo.
 
-[CHANGELOG](CHANGELOG.md)
+[CHANGELOG](https://github.com/TeemuKoivisto/make-me-a-cup-of-tea/blob/master/packages/observable/CHANGELOG.md)
