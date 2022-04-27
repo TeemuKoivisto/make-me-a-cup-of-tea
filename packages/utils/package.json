@@ -14,7 +14,7 @@
   ],
   "repository": "https://github.com/TeemuKoivisto/make-me-a-cup-of-tea",
   "publishConfig":{
-    "registry": "https://npm.pkg.github.com/@TeemuKoivisto"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "rimraf dist && rollup -c",
