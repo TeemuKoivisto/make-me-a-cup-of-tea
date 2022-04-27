@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/observable
 
+## 0.0.4
+
+### Patch Changes
+
+- 11f2788: Add CHANGELOG link to READMEs
+
 ## 0.0.3
 
 ### Patch Changes
