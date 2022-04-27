@@ -45,6 +45,12 @@ jobs:
       - name: Build packages
         run: pnpm build
 
+      - name: Setup .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //npm.pkg.github.com
+          EOF
+
       - name: Create and publish versions
         uses: changesets/action@v1
         with:
