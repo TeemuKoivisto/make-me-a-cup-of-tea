@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/observable
 
+## 0.0.6
+
+### Patch Changes
+
+- f42a115: Added JSdoc to Observable
+
 ## 0.0.5
 
 ### Patch Changes
