@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/utils
 
+## 0.0.7
+
+### Patch Changes
+
+- 143c10a: Removed hello
+
 ## 0.0.6
 
 ### Patch Changes
