@@ -30,6 +30,14 @@ jobs:
           node-version: ${{ matrix.node_version }}
           registry-url: 'https://registry.npmjs.org'
 
+      - name: setup caching
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.PNPM_CACHE_FOLDER }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
       - name: Install dependencies with pnpm
         uses: ./.github/actions/pnpm
 
