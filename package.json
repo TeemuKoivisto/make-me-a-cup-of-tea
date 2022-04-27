@@ -8,7 +8,7 @@
     "cs:publish": "changeset publish",
     "cs:version": "changeset version",
     "ci:version": "changeset version && pnpm i --lockfile-only",
-    "ci:publish": "pnpm publish -r --no-git-checks --tag=next"
+    "ci:publish": "pnpm publish -r --no-git-checks"
   },
   "engines": {
     "node": ">=14.18",
