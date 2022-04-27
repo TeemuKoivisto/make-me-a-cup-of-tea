@@ -8,7 +8,6 @@ on:
 
 env:
   CI: true
-  PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
   version:
@@ -33,25 +32,14 @@ jobs:
           node-version: ${{ matrix.node_version }}
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Cache pnpm dependencies
-        uses: actions/cache@v2
-        with:
-          path: ${{ env.PNPM_CACHE_FOLDER }}
-          key: ${{ runner.os }}-node${{ matrix.node-version }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
-
-      - name: Install pnpm
-        run: npm i pnpm@latest -g
-  
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Install dependencies with pnpm
+        uses: ./.github/actions/pnpm
 
       - name: Build packages
         run: pnpm build
     
       - name: Create versions
-        uses: changesets/action@master
+        uses: changesets/action@v1
         with:
           version: pnpm ci:version
           commit: 'chore(changeset): version update'
