@@ -4,9 +4,7 @@ Purely for testing purposes
 
 ## The flow
 
-1. Make features, create PRs, merge them
-2. Run `pnpm changeset` to decide what to publish
-3. Commit the created Markdown files, merge to master
-4. This should create a PR which can include multiple changesets
-5. When ready for publishing, merge the PR
-6. Action should automatically deploy the packages to NPM
+1. Make changes, run `pnpm cs` to create changeset files, create a PR, merge it
+2. This should create a PR which can include multiple changesets that can be deployed at once
+3. When ready for publishing, merge the PR
+4. Action should automatically deploy the packages to NPM
