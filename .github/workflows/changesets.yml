@@ -51,7 +51,7 @@ jobs:
             //npm.pkg.github.com/:_authToken=$NPM_TOKEN
           EOF
         env:
-         NPM_TOKEN: ${{ secrets.GH_PAT }}
+          NPM_TOKEN: ${{ secrets.GH_PAT }}
           HOME: ${{ github.workspace }}
 
       - name: Create and publish versions
