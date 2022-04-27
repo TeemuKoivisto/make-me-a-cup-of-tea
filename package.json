@@ -10,6 +10,9 @@
     "ci:version": "changeset version && pnpm i --lockfile-only",
     "ci:publish": "pnpm publish -r --no-git-checks"
   },
+  "publishConfig":{
+    "registry": "https://npm.pkg.github.com"
+  },
   "engines": {
     "node": ">=14.18",
     "pnpm": "^6.0.0"
