@@ -48,12 +48,14 @@ jobs:
       - name: Setup .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"
-            //npm.pkg.github.com/:_authToken=$NPM_TOKEN
-            @make-me-a-cup-of-tea:registry=https://npm.pkg.github.com/
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+            //npm.pkg.github.com/:_authToken=$GH_TOKEN
+            @make-me-a-cup-of-tea:registry=https://registry.npmjs.org/
             @teemukoivisto:registry=https://npm.pkg.github.com/
           EOF
         env:
-          NPM_TOKEN: ${{ secrets.GH_PAT }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
           HOME: ${{ github.workspace }}
 
       - name: Create and publish versions
