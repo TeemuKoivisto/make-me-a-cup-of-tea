@@ -1,5 +1,5 @@
 {
-  "name": "make-me-a-cup-of-tea/observable",
+  "name": "@make-me-a-cup-of-tea/observable",
   "version": "0.0.6",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
