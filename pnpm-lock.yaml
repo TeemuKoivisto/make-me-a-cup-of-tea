@@ -32,6 +32,18 @@ importers:
       rollup-plugin-typescript2: 0.30.0_rollup@2.59.0+typescript@4.4.4
       typescript: 4.4.4
 
+  packages/toolkit:
+    specifiers:
+      rimraf: ^3.0.2
+      rollup: ^2.58.3
+      rollup-plugin-typescript2: ^0.30.0
+      typescript: ^4.4.4
+    devDependencies:
+      rimraf: 3.0.2
+      rollup: 2.59.0
+      rollup-plugin-typescript2: 0.30.0_rollup@2.59.0+typescript@4.4.4
+      typescript: 4.4.4
+
   packages/utils:
     specifiers:
       rimraf: ^3.0.2
