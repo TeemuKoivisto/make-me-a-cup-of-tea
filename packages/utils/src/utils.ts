@@ -22,6 +22,10 @@ export function generateUUID() {
   })
 }
 
+export function wazaa() {
+  return [true, 'aaaaa']
+}
+
 export class CustomError extends Error {
   statusCode?: number
 

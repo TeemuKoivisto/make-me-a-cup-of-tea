@@ -4,34 +4,34 @@
  * Define events as strings eg 'update' | 'unmount' to which you can subscribe event listeners to.
  */
 export class Observable<K = string> {
-  _observers = new Map<K, Set<(...args: any[]) => void>>()
+  #observers = new Map<K, Set<(...args: any[]) => void>>()
 
   on(key: K, cb: (...args: any[]) => void) {
-    const current = this._observers.get(key)
+    const current = this.#observers.get(key)
     if (current) {
-      this._observers.set(key, new Set(current.add(cb)))
+      this.#observers.set(key, new Set(current.add(cb)))
     } else {
-      this._observers.set(key, new Set([cb]))
+      this.#observers.set(key, new Set([cb]))
     }
   }
 
   off(key: K, cb: (...args: any[]) => void) {
-    const observers = this._observers.get(key)
+    const observers = this.#observers.get(key)
     if (observers) {
       observers.delete(cb)
       if (observers.size === 0) {
-        this._observers.delete(key)
+        this.#observers.delete(key)
       }
     }
   }
 
   emit(key: K, ...args: any[]) {
-    return Array.from((this._observers.get(key) || new Set()).values()).forEach(
+    return Array.from((this.#observers.get(key) || new Set()).values()).forEach(
       (cb) => cb(...args)
     )
   }
 
   destroy() {
-    this._observers = new Map()
+    this.#observers = new Map()
   }
 }
