@@ -32,6 +32,7 @@ yarn-error.log*
 .pnpm-store
 .cache
 .netrc
+.npmrc
 
 .eslintcache
 
