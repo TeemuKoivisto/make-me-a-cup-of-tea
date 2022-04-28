@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/observable
 
+## 0.0.7
+
+### Patch Changes
+
+- ea4f42b: Minor changes
+
 ## 0.0.6
 
 ### Patch Changes
