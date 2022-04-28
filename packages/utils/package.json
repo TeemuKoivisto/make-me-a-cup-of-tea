@@ -13,9 +13,6 @@
     "dist"
   ],
   "repository": "https://github.com/TeemuKoivisto/make-me-a-cup-of-tea",
-  "publishConfig":{
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "build": "rimraf dist && rollup -c",
     "format": "prettier --write \"*.+(js|json|yml|yaml|ts|md|graphql|mdx)\" src/",

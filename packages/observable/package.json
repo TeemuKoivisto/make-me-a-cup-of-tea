@@ -14,9 +14,6 @@
     "dist"
   ],
   "repository": "https://github.com/TeemuKoivisto/make-me-a-cup-of-tea",
-  "publishConfig":{
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "build": "rimraf dist && rollup -c",
     "format": "prettier --write \"*.+(js|json|yml|yaml|ts|md|graphql|mdx)\" src/",
@@ -28,6 +25,7 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.58.3",
     "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.4.0",
     "typescript": "^4.4.4"
   }
 }

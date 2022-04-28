@@ -2,6 +2,10 @@
 
 Purely for testing purposes
 
+## Some notes
+
+You can't use other organizations than the owner (in this case 'TeemuKoivisto') as your scope in your packages. So I can't publish @make-me-a-cup-of-tea packages to Github package registry. Which is balls.
+
 ## The flow
 
 1. Make changes, run `pnpm cs` to create changeset files, create a PR, merge it
