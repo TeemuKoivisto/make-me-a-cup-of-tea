@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/observable
 
+## 0.0.8
+
+### Patch Changes
+
+- b65f02f: Added hello method
+
 ## 0.0.7
 
 ### Patch Changes
