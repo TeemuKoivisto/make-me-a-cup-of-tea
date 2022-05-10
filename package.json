@@ -2,7 +2,6 @@
   "name": "make-me-a-cup-of-tea",
   "type": "module",
   "scripts": {
-    "build": "pnpm build -r",
     "start": "concurrently --kill-others 'pnpm run watch --filter @make-me-a-cup-of-tea/observable' 'pnpm run watch --filter @make-me-a-cup-of-tea/utils'",
     "cs": "changeset",
     "cs:publish": "changeset publish",
