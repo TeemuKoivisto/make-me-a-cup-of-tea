@@ -31,7 +31,7 @@ export class Observable<K = string> {
     )
   }
 
-  hello() {
+  hello_world() {
     return 'hello world'
   }
 
