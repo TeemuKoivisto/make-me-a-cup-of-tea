@@ -1,5 +1,12 @@
 # @make-me-a-cup-of-tea/observable
 
+## 0.0.9
+
+### Patch Changes
+
+- 3f0a8b2: change hello to hello_world
+- d559887: add hello to observable and utils
+
 ## 0.0.8
 
 ### Patch Changes
