@@ -10,7 +10,7 @@ runs:
   using: composite
   steps:
     - name: Install pnpm
-      run: npm i pnpm@latest -g
+      run: npm i pnpm@6 -g
       shell: bash
 
     - name: Setup pnpm config
