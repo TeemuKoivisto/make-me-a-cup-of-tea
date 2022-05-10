@@ -1,5 +1,12 @@
 # @make-me-a-cup-of-tea/observable
 
+## 0.0.10
+
+### Patch Changes
+
+- cab89b0: added bye function
+- 5f25f99: updated hello world function
+
 ## 0.0.9
 
 ### Patch Changes
