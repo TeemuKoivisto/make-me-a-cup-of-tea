@@ -22,8 +22,8 @@ export function generateUUID() {
   })
 }
 
-export function wazaa() {
-  return [true, 'aaaaa']
+export function hello() {
+  console.log('hello')
 }
 
 export class CustomError extends Error {
