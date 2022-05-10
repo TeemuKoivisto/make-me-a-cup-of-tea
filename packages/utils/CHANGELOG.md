@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/utils
 
+## 0.0.9
+
+### Patch Changes
+
+- d559887: add hello to observable and utils
+
 ## 0.0.8
 
 ### Patch Changes
