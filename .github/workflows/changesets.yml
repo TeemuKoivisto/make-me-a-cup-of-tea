@@ -43,7 +43,7 @@ jobs:
         uses: ./.github/actions/pnpm
 
       - name: Build packages
-        run: pnpm build -r
+        run: pnpm -r build
 
       - name: Setup .npmrc
         run: |
