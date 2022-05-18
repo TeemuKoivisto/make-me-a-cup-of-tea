@@ -31,10 +31,6 @@ export class Observable<K = string> {
     )
   }
 
-  hello_world() {
-    return 'hello world'
-  }
-
   destroy() {
     this.#observers = new Map()
   }
