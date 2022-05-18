@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/observable
 
+## 0.0.11
+
+### Patch Changes
+
+- ea3a093: Fix remove unused code
+
 ## 0.0.10
 
 ### Patch Changes
