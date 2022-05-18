@@ -1,0 +1,52 @@
+{
+  "name": "@make-me-a-cup-of-tea/quarterback-api",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Atypon Systems LLC",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/Atypon-OpenSource/manuscripts-quarterback",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "watch": "rollup -cw",
+    "dev": "nodemon --watch dist dist/index.js",
+    "format": "prettier --write \"*.+(js|json|yml|yaml|ts|md|graphql|mdx)\" src/",
+    "lint": "eslint --cache --ext .js,.ts, ./src",
+    "lint:fix": "eslint --fix --ext .js,.ts, ./src",
+    "test": "exit 0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.8",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/express-serve-static-core": "^4.17.24",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.11.6",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.14",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.58.3",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@make-me-a-cup-of-tea/quarterback-db": "workspace:*",
+    "@make-me-a-cup-of-tea/quarterback-shared": "workspace:*",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "~4.17.1",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3"
+  }
+}
