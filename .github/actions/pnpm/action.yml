@@ -10,7 +10,7 @@ runs:
   using: composite
   steps:
     - name: Install pnpm
-      run: npm i pnpm@6 -g
+      run: npm i pnpm@7 -g
       shell: bash
 
     - name: Setup pnpm config
@@ -18,5 +18,5 @@ runs:
       shell: bash
 
     - name: Install dependencies
-      run: pnpm install --frozen-lockfile
+      run: pnpm i --frozen-lockfile
       shell: bash
