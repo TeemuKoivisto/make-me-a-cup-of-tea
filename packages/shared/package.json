@@ -37,8 +37,5 @@
   },
   "peerDependencies": {
     "@manuscripts/manuscript-transform": "*"
-  },
-  "dependencies": {
-    "@make-me-a-cup-of-tea/quarterback-db": "workspace:*"
   }
 }

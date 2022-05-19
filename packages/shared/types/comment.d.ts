@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { ManuscriptComment } from '@make-me-a-cup-of-tea/quarterback-db'
+import { ManuscriptComment } from '../prisma'
 
-export { ManuscriptComment } from '@make-me-a-cup-of-tea/quarterback-db'
+export { ManuscriptComment } from '../prisma'
 
 export type CommentWithUserColor = ManuscriptComment & {
   user: {

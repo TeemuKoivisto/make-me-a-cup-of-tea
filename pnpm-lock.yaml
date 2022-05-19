@@ -104,14 +104,11 @@ importers:
 
   packages/shared:
     specifiers:
-      '@make-me-a-cup-of-tea/quarterback-db': workspace:*
       '@manuscripts/manuscript-transform': ^0.48.23
       rimraf: ^3.0.2
       rollup: ^2.58.3
       rollup-plugin-typescript2: ^0.30.0
       typescript: ^4.4.4
-    dependencies:
-      '@make-me-a-cup-of-tea/quarterback-db': link:../db
     devDependencies:
       '@manuscripts/manuscript-transform': 0.48.23
       rimraf: 3.0.2
