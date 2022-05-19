@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/quarterback-shared
 
+## 0.0.5
+
+### Patch Changes
+
+- 52cd2b8: Fix missing prisma type files
+
 ## 0.0.4
 
 ### Patch Changes
