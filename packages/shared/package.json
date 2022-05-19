@@ -5,9 +5,9 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/Atypon-OpenSource/manuscripts-quarterback",
   "repository": "https://github.com/TeemuKoivisto/make-me-a-cup-of-tea",
+  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "type": "module",
   "types": "types/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
@@ -16,6 +16,7 @@
   "files": [
     "dist",
     "src",
+    "prisma",
     "types"
   ],
   "publishConfig": {
