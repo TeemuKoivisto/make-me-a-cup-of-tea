@@ -1,9 +1,6 @@
 {
   "name": "@make-me-a-cup-of-tea/track-changes-plugin",
   "version": "0.0.1",
-  "author": "Atypon Systems LLC",
-  "license": "Apache-2.0",
-  "homepage": "https://github.com/Atypon-OpenSource/manuscripts-quarterback",
   "repository": "https://github.com/TeemuKoivisto/make-me-a-cup-of-tea",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
