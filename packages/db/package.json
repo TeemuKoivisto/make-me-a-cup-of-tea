@@ -7,7 +7,8 @@
   "main": "generated/index.js",
   "types": "generated/index.d.ts",
   "files": [
-    "generated/*"
+    "generated/index.d.ts",
+    "prisma/*"
   ],
   "publishConfig": {
     "access": "public"
