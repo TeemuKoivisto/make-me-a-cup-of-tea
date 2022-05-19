@@ -50,6 +50,7 @@ export const createDocument = async (
   next: NextFunction
 ) => {
   try {
+    // @ts-ignore
     const userId = res.locals.user._id
     if (!userId) {
       return next(new CustomError('Missing user._id from res.locals', 401))
