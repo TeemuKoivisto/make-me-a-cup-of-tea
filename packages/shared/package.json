@@ -29,7 +29,6 @@
     "watch": "rollup -cw"
   },
   "devDependencies": {
-    "@make-me-a-cup-of-tea/quarterback-db": "workspace:*",
     "@manuscripts/manuscript-transform": "^0.48.23",
     "rimraf": "^3.0.2",
     "rollup": "^2.58.3",
@@ -38,5 +37,8 @@
   },
   "peerDependencies": {
     "@manuscripts/manuscript-transform": "*"
+  },
+  "dependencies": {
+    "@make-me-a-cup-of-tea/quarterback-db": "workspace:*"
   }
 }
