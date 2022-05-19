@@ -1,5 +1,13 @@
 # @make-me-a-cup-of-tea/quarterback-api
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [4fd5f7f]
+  - @make-me-a-cup-of-tea/quarterback-db@0.0.3
+  - @make-me-a-cup-of-tea/quarterback-shared@0.0.4
+
 ## 0.0.3
 
 ### Patch Changes

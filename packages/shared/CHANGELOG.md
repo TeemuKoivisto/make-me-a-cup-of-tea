@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/quarterback-shared
 
+## 0.0.4
+
+### Patch Changes
+
+- 4fd5f7f: Unpublish db, copy Prisma types instead to shared
+
 ## 0.0.3
 
 ### Patch Changes
