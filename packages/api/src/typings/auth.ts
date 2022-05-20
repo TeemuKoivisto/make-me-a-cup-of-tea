@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { User } from '@make-me-a-cup-of-tea/quarterback-shared'
+import { User } from '@make-me-a-cup-of-tea/quarterback-types'
 
 export interface IJwtPayload {
   expires: number

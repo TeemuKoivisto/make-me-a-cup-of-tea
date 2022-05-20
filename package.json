@@ -2,6 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "pnpm --filter \"./packages/**\" build",
     "start": "concurrently --kill-others 'pnpm run watch --filter @make-me-a-cup-of-tea/observable' 'pnpm run watch --filter @make-me-a-cup-of-tea/utils'",
     "cs": "changeset",
     "cs:publish": "changeset publish",

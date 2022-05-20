@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { IAuthenticateParams } from '@make-me-a-cup-of-tea/quarterback-shared'
+import { IAuthenticateParams } from '@make-me-a-cup-of-tea/quarterback-types'
 import { NextFunction, Request, Response } from 'express'
 import Joi from 'joi'
 

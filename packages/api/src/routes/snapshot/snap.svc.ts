@@ -18,7 +18,7 @@ import {
   SnapshotLabel,
   ISaveSnapshotRequest,
   IUpdateSnapshotRequest,
-} from '@make-me-a-cup-of-tea/quarterback-shared'
+} from '@make-me-a-cup-of-tea/quarterback-types'
 
 import { CustomError, log, prisma } from '$common'
 import { ManuscriptSnapshot } from '@make-me-a-cup-of-tea/quarterback-db'

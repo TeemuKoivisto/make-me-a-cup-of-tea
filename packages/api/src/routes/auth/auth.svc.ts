@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { IAuthenticateParams, User } from '@make-me-a-cup-of-tea/quarterback-shared'
+import { IAuthenticateParams, User } from '@make-me-a-cup-of-tea/quarterback-types'
 
 import { CustomError, prisma } from '$common'
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import type { UserProfileWithAvatar } from '@make-me-a-cup-of-tea/quarterback-shared'
+import type { UserProfile } from '@make-me-a-cup-of-tea/manuscripts-json-schema'
 import type { Request, Response } from 'express'
 import type { ParamsDictionary } from 'express-serve-static-core'
 
@@ -23,7 +23,7 @@ export type IRequest<
 > = Request<P, Record<string, never>, B, Record<string, never>>
 
 type AuthLocals = {
-  user: UserProfileWithAvatar
+  user: UserProfile
 }
 
 export type AuthRequest<

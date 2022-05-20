@@ -19,7 +19,7 @@ import {
   ISaveSnapshotResponse,
   ISaveSnapshotRequest,
   IUpdateSnapshotRequest,
-} from '@make-me-a-cup-of-tea/quarterback-shared'
+} from '@make-me-a-cup-of-tea/quarterback-types'
 import { NextFunction, Request, Response } from 'express'
 import Joi from 'joi'
 

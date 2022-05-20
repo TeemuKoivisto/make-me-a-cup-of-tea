@@ -18,7 +18,7 @@ import {
   ManuscriptDoc,
   ICreateDocRequest,
   ManuscriptDocWithSnapshots,
-} from '@make-me-a-cup-of-tea/quarterback-shared'
+} from '@make-me-a-cup-of-tea/quarterback-types'
 
 import { CustomError, log, prisma } from '$common'
 

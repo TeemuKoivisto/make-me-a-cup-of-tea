@@ -18,7 +18,7 @@ import {
   ICreateCommentRequest,
   ICreateCommentResponse,
   IUpdateCommentRequest,
-} from '@make-me-a-cup-of-tea/quarterback-shared'
+} from '@make-me-a-cup-of-tea/quarterback-types'
 import { NextFunction, Request, Response } from 'express'
 import Joi from 'joi'
 
@@ -53,7 +53,6 @@ export const createComment = async (
   next: NextFunction
 ) => {
   try {
-    // @ts-ignore
     const userId = res.locals.user._id
     if (!userId) {
       return next(new CustomError('Missing user._id from res.locals', 401))

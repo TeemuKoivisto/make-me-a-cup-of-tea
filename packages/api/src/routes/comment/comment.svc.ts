@@ -18,7 +18,7 @@ import {
   Event,
   ICreateCommentRequest,
   IUpdateCommentRequest,
-} from '@make-me-a-cup-of-tea/quarterback-shared'
+} from '@make-me-a-cup-of-tea/quarterback-types'
 
 import { CustomError, log, prisma } from '$common'
 import { ManuscriptComment } from '@make-me-a-cup-of-tea/quarterback-db'
