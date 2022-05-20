@@ -1,5 +1,16 @@
 # @make-me-a-cup-of-tea/quarterback-api
 
+## 0.1.0
+
+### Minor Changes
+
+- 6066776: Update packages to latest quarterback setup
+
+### Patch Changes
+
+- Updated dependencies [6066776]
+  - @make-me-a-cup-of-tea/quarterback-db@0.1.0
+
 ## 0.0.5
 
 ### Patch Changes
