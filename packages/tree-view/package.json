@@ -33,9 +33,11 @@
     "base16",
     "theme"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build":  "svelte-package",
-    "build2":  "vite build",
+    "build": "svelte-package",
     "sync": "svelte-kit sync",
     "build:dist": "rimraf ./dist && rollup -c && cp ./src/lib/types.ts ./dist/types.d.ts",
     "watch:pkg": "svelte-package --watch",
