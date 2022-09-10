@@ -1,5 +1,5 @@
 {
-  "name": "@make-me-a-cup-of-tea/svelte-tree-view-test",
+  "name": "@make-me-a-cup-of-tea/tree-view",
   "version": "0.0.1",
   "author": "Teemu Koivisto <teemukoivisto.xyz@gmail.com>",
   "license": "MIT",
@@ -35,6 +35,8 @@
   ],
   "scripts": {
     "build":  "svelte-package",
+    "build2":  "vite build",
+    "sync": "svelte-kit sync",
     "build:dist": "rimraf ./dist && rollup -c && cp ./src/lib/types.ts ./dist/types.d.ts",
     "watch:pkg": "svelte-package --watch",
     "dev": "vite",
@@ -73,7 +75,8 @@
     "ts-jest": "^29.0.0",
     "tslib": "^2.4.0",
     "typescript": "^4.8.3",
-    "vitest": "^0.23.1"
+    "vitest": "^0.23.1",
+    "vite": "^3.1.0"
   },
   "dependencies": {}
 }

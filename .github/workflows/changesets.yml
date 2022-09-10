@@ -42,6 +42,9 @@ jobs:
       - name: Install dependencies with pnpm
         uses: ./.github/actions/pnpm
 
+      - name: Run svelte-kit sync since .svelte-kit is not generated otherwise
+        run: pnpm --filter tree-view sync
+
       - name: Build packages
         run: pnpm -r build
 

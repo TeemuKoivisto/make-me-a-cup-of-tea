@@ -49,3 +49,7 @@ db/postgres
 **/cypress/**/*.diff.png
 **/cypress/videos
 **/cypress/downloads
+
+# Svelte
+package
+.svelte-kit
