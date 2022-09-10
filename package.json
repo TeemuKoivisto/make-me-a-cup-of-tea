@@ -4,11 +4,9 @@
   "scripts": {
     "build": "pnpm --filter \"./packages/**\" build",
     "start": "concurrently --kill-others 'pnpm run watch --filter @make-me-a-cup-of-tea/observable' 'pnpm run watch --filter @make-me-a-cup-of-tea/utils'",
-    "cs": "changeset",
-    "cs:publish": "changeset publish",
-    "cs:version": "changeset version",
-    "ci:version": "changeset version && pnpm i --lockfile-only",
-    "ci:publish": "pnpm publish -r --no-git-checks"
+    "cs": "changeset && git add .changeset",
+    "ci:version": "changeset version",
+    "ci:publish": "pnpm --filter \"./packages/**\" --no-git-checks publish"
   },
   "engines": {
     "node": ">=16",

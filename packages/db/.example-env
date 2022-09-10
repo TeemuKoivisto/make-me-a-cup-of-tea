@@ -1,1 +1,0 @@
-DATABASE_URL=postgresql://pg-user:pg-password@localhost:5102/local_quarterback_db?schema=public

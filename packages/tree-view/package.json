@@ -1,0 +1,79 @@
+{
+  "name": "@make-me-a-cup-of-tea/svelte-tree-view-test",
+  "version": "0.0.1",
+  "author": "Teemu Koivisto <teemukoivisto.xyz@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/TeemuKoivisto/svelte-tree-view",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "svelte": "package/index.js",
+  "type": "module",
+  "types": "dist/types.d.ts",
+  "files": [
+    "package",
+    "dist",
+    ".npmignore",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeemuKoivisto/svelte-tree-view.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TeemuKoivisto/svelte-tree-view/issues"
+  },
+  "keywords": [
+    "svelte",
+    "tree-view",
+    "json-tree",
+    "typescript",
+    "tree",
+    "json",
+    "base16",
+    "theme"
+  ],
+  "scripts": {
+    "build":  "svelte-package",
+    "build:dist": "rimraf ./dist && rollup -c && cp ./src/lib/types.ts ./dist/types.d.ts",
+    "watch:pkg": "svelte-package --watch",
+    "dev": "vite",
+    "preversion": "pnpm svelte-check && pnpm test && pnpm build",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "cp ../../README.md . && cp ../../LICENSE .",
+    "publish": "cd ./package && npm publish",
+    "postpublish": "rm README.md LICENSE",
+    "svelte-check": "svelte-check",
+    "test": "pnpm test:unit && pnpm test:e2e",
+    "test:unit": "vitest run",
+    "test:e2e": "exit 0",
+    "cy": "cypress"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.0.1",
+    "@sveltejs/kit": "^1.0.0-next.480",
+    "@sveltejs/package": "^1.0.0-next.3",
+    "@testing-library/cypress": "^8.0.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/svelte": "^3.2.1",
+    "cypress": "^9.7.0",
+    "jsdom": "^20.0.0",
+    "postcss": "^8.4.16",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.79.0",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-ts": "^3.0.2",
+    "sass": "^1.54.9",
+    "svelte": "^3.50.1",
+    "svelte-check": "^2.9.0",
+    "svelte-preprocess": "^4.10.7",
+    "svelte2tsx": "^0.5.16",
+    "ts-jest": "^29.0.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3",
+    "vitest": "^0.23.1"
+  },
+  "dependencies": {}
+}
