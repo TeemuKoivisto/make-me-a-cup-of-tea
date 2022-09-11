@@ -41,6 +41,6 @@ export const createPropsStore = (initialProps: Omit<TreeViewProps, 'data'>) => {
         default:
           return val
       }
-    }
+    },
   }
 }

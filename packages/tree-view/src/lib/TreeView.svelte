@@ -13,7 +13,7 @@
     TreeViewProps,
     Base16Theme,
     ValueComponent,
-    TreeRecursionOpts
+    TreeRecursionOpts,
   } from './types'
 
   export let data: unknown,
@@ -29,7 +29,7 @@
     maxDepth: 16,
     omitKeys: [],
     stopCircularRecursion: false,
-    shouldExpandNode: () => false
+    shouldExpandNode: () => false,
   }
   let props: Omit<TreeViewProps, 'data'> = {
     showLogButton,
@@ -37,9 +37,9 @@
     valueComponent,
     recursionOpts: {
       ...defaultRecursionOpts,
-      ...recursionOpts
+      ...recursionOpts,
     },
-    valueFormatter
+    valueFormatter,
   }
   $: rootNode = treeStore.tree
   $: {
@@ -51,14 +51,14 @@
       showCopyButton,
       valueComponent,
       valueFormatter,
-      recursionOpts: props.recursionOpts
+      recursionOpts: props.recursionOpts,
     }
   }
   $: {
     // Combine the defaultProps with the possible new recursion opts
     const newRecursionOpts = {
       ...defaultRecursionOpts,
-      ...recursionOpts
+      ...recursionOpts,
     }
     // Compare the old shouldExpandNode option with the possible new shouldExpandNode
     // to know whether to whole tree should be recomputed.
@@ -94,7 +94,7 @@
   setContext<Stores>('svelte-tree-view', {
     propsStore,
     rootElementStore,
-    treeStore
+    treeStore,
   })
 
   onMount(() => {

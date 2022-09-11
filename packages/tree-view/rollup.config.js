@@ -17,18 +17,18 @@ export default {
       file: pkg.main,
       format: 'umd',
       name: 'svelte-tree-view',
-      sourcemap: isProduction
+      sourcemap: isProduction,
     },
     {
       file: pkg.module,
       format: 'es',
-      sourcemap: isProduction
-    }
+      sourcemap: isProduction,
+    },
   ],
   external: [
     ...Object.keys(pkg.dependencies || {}),
     // ...Object.keys(pkg.devDependencies || {}),
-    ...Object.keys(pkg.peerDependencies || {})
+    ...Object.keys(pkg.peerDependencies || {}),
   ],
   plugins: [
     commonjs(),
@@ -36,17 +36,17 @@ export default {
     svelte({
       compilerOptions: {
         // enable run-time checks when not in production
-        dev: !isProduction
+        dev: !isProduction,
       },
-      preprocess: autoPreprocess(svelteConfig.preprocessOptions)
+      preprocess: autoPreprocess(svelteConfig.preprocessOptions),
     }),
     scss(),
     resolve({
       browser: true,
-      dedupe: ['svelte']
-    })
+      dedupe: ['svelte'],
+    }),
   ],
   watch: {
-    clearScreen: false
-  }
+    clearScreen: false,
+  },
 }

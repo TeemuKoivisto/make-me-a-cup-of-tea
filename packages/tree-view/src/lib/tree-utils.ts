@@ -19,7 +19,7 @@ export function createNode(
     path,
     parentId: parent ? parent.id : null,
     circularOfId: null,
-    children: []
+    children: [],
   }
 }
 
@@ -83,8 +83,8 @@ function getChildren(value: any, type: ValueType): [string, any][] {
         `[map entry ${i}]`,
         {
           '[key]': key,
-          '[value]': value
-        }
+          '[value]': value,
+        },
       ])
     case 'set':
       return Array.from(value.values()).map((v: any, i: number) => [`[set entry ${i}]`, v])

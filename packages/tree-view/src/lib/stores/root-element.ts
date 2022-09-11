@@ -7,6 +7,6 @@ export const createRootElementStore = () => {
 
   return {
     set: rootElementStore.set,
-    subscribe: rootElementStore.subscribe
+    subscribe: rootElementStore.subscribe,
   }
 }
