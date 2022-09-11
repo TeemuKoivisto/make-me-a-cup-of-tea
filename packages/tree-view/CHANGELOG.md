@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/tree-view
 
+## 0.0.6
+
+### Patch Changes
+
+- 41fd405: ci: push tags on pnpm publish
+
 ## 0.0.5
 
 ### Patch Changes
