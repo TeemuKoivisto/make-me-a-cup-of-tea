@@ -1,6 +1,7 @@
 {
   "name": "@teemukoivisto/toolkit",
   "version": "0.0.3",
+  "private": true,
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "type": "module",
