@@ -7,7 +7,8 @@
     "build": "pnpm --filter \"./packages/**\" build",
     "cs": "changeset && git add .changeset",
     "ci:version": "changeset version",
-    "ci:publish": "pnpm --filter \"./packages/**\" --no-git-checks publish",
+    "ci:publish": "changeset publish",
+    "ci:publish2": "pnpm --filter \"./packages/**\" --no-git-checks publish",
     "prepare": "husky install"
   },
   "engines": {
