@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/tree-view
 
+## 0.0.4
+
+### Patch Changes
+
+- 1a5dfdf: build: change exports
+
 ## 0.0.3
 
 ### Patch Changes
