@@ -10,9 +10,7 @@
   "type": "module",
   "types": "dist/types.d.ts",
   "exports": {
-    "./package.json": "./package.json",
-    "./package/*.js": "./package/*/*.js",
-    "./package/*.svelte": "./package/*/*.svelte"
+    "./package.json": "./package.json"
   },
   "files": [
     "package",
@@ -48,7 +46,7 @@
     "watch:pkg": "svelte-package --watch",
     "dev": "vite",
     "preversion": "pnpm svelte-check && pnpm test && pnpm build",
-    "prepublishOnly": "cp ../../README.md . && cp ../../LICENSE .",
+    "prepublishOnly": "cp ../../README.md . && cp ../../LICENSE . && rm package/package.json && rm package/CHANGELOG.md",
     "postpublish": "rm README.md LICENSE",
     "svelte-check": "svelte-check",
     "test": "pnpm test:unit && pnpm test:e2e",

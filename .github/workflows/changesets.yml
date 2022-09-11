@@ -65,6 +65,7 @@ jobs:
           commit: 'chore(changeset): version update'
           title: 'chore(changeset): version update'
           publish: pnpm ci:publish
+          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HOME: ${{ github.workspace }}
