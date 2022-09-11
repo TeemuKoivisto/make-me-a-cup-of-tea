@@ -42,7 +42,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "pnpm build:dist && pnpm build:pkg",
+    "build": "pnpm build:pkg && pnpm build:dist",
     "build:dist": "rimraf ./dist && rollup -c && cp ./src/lib/types.ts ./dist/types.d.ts",
     "build:pkg": "svelte-kit sync && svelte-package",
     "watch:pkg": "svelte-package --watch",
