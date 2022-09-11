@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/tree-view
 
+## 0.0.5
+
+### Patch Changes
+
+- a48eb93: chore: update & publish tree-view
+
 ## 0.0.4
 
 ### Patch Changes
