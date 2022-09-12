@@ -3,13 +3,8 @@ name: Version and publish packages with changesets
 on:
   push:
     branches:
-      - main
       - master
   workflow_dispatch:
-
-env:
-  CI: true
-  PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
   version:
@@ -26,16 +21,15 @@ jobs:
           fetch-depth: 0
 
       - name: Setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node_version }}
-          registry-url: 'npm.pkg.github.com'
 
       - name: Install dependencies with pnpm
         uses: ./.github/actions/pnpm
 
-      - name: Build packages
-        run: pnpm -r build
+      - name: Build & test
+        uses: ./.github/actions/build-test
 
       - name: Setup .npmrc
         run: |
@@ -57,7 +51,6 @@ jobs:
           commit: 'chore(changeset): version update'
           title: 'chore(changeset): version update'
           publish: pnpm ci:publish
-          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HOME: ${{ github.workspace }}
