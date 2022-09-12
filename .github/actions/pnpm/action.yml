@@ -9,6 +9,13 @@ inputs:
 runs:
   using: composite
   steps:
+    - name: Setup caching
+      uses: actions/cache@v2
+      with:
+        path: ${{ env.PNPM_CACHE_FOLDER }}
+        key: ${{ runner.os }}-node-${{ matrix.node-version }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: ${{ runner.os }}-node-${{ matrix.node-version }}-pnpm-
+
     - name: Install pnpm
       run: npm i pnpm@7 -g
       shell: bash
