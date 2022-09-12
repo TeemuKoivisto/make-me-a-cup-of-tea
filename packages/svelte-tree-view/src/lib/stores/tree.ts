@@ -92,6 +92,6 @@ export const createTreeStore = (propsStore: PropsStore) => {
       const updated = new Map<string, TreeNode>(get(treeMap))
       recurseNodeUpwards(updated, updated.get(id))
       treeMap.set(updated)
-    }
+    },
   }
 }

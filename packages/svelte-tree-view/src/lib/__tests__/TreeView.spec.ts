@@ -21,7 +21,7 @@ async function clickByText(container: HTMLElement, text: string, index = 0) {
       el,
       new MouseEvent('click', {
         bubbles: true,
-        cancelable: true
+        cancelable: true,
       })
     )
   }
@@ -33,9 +33,9 @@ describe('TreeView', () => {
       props: {
         data: example1,
         recursionOpts: {
-          shouldExpandNode: () => true
-        }
-      }
+          shouldExpandNode: () => true,
+        },
+      },
     })
 
     expect(results.container.querySelectorAll('ul').length).toEqual(37)
@@ -65,7 +65,7 @@ describe('TreeView', () => {
             }
             return true
           },
-          shouldExpandNode: () => true
+          shouldExpandNode: () => true,
         },
         valueFormatter: (val: any, node: TreeNode) => {
           switch (node.type) {
@@ -106,9 +106,9 @@ describe('TreeView', () => {
           base0C: '#576D82',
           base0D: '#6D5782',
           base0E: '#82576D',
-          base0F: '#825757'
-        }
-      }
+          base0F: '#825757',
+        },
+      },
     })
 
     expect(results.container.querySelectorAll('ul').length).toEqual(34)
@@ -122,16 +122,16 @@ describe('TreeView', () => {
       a: [1, 2, 3],
       b: new Map<string, any>([
         ['c', { d: null }],
-        ['e', { f: [9, 8, 7] }]
-      ])
+        ['e', { f: [9, 8, 7] }],
+      ]),
     }
     const results = render(TreeView, {
       props: {
         data,
         recursionOpts: {
-          maxDepth: 4
-        }
-      }
+          maxDepth: 4,
+        },
+      },
     })
     window.HTMLElement.prototype.scrollIntoView = vi.fn()
 
@@ -167,9 +167,9 @@ describe('TreeView', () => {
         data,
         recursionOpts: {
           maxDepth: 5,
-          stopCircularRecursion: true
-        }
-      }
+          stopCircularRecursion: true,
+        },
+      },
     })
 
     // Rerendering should collapse again everything
@@ -200,8 +200,8 @@ describe('TreeView', () => {
   it('should not map primitive values and renders them correctly in list', async () => {
     const results = render(TreeView, {
       props: {
-        data: undefined
-      }
+        data: undefined,
+      },
     })
     window.HTMLElement.prototype.scrollIntoView = vi.fn()
 
@@ -219,21 +219,21 @@ describe('TreeView', () => {
       function () {
         return 0
       },
-      document.createElement('li')
+      document.createElement('li'),
     ]
     nonTreeValues.forEach(val => {
       results.rerender({
         props: {
-          data: val
-        }
+          data: val,
+        },
       })
       expect(results.container.querySelectorAll('li').length).toEqual(0)
     })
 
     results.rerender({
       props: {
-        data: nonTreeValues
-      }
+        data: nonTreeValues,
+      },
     })
     expect(results.container.querySelectorAll('li').length).toEqual(10)
   })

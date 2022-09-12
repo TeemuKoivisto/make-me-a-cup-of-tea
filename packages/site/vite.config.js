@@ -4,6 +4,6 @@ import { sveltekit } from '@sveltejs/kit/vite'
 export default {
   plugins: [sveltekit()],
   server: {
-    port: 5185
-  }
+    port: 5185,
+  },
 }

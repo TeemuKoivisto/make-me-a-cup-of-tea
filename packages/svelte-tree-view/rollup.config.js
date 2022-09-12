@@ -1,6 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
-import typescript from 'rollup-plugin-ts'
+import typescript from 'rollup-plugin-typescript2'
 import svelte from 'rollup-plugin-svelte'
 import autoPreprocess from 'svelte-preprocess'
 import scss from 'rollup-plugin-scss'
@@ -15,20 +15,19 @@ export default {
   output: [
     {
       file: pkg.main,
-      format: 'umd',
-      name: 'svelte-tree-view',
-      sourcemap: isProduction
+      format: 'cjs',
+      sourcemap: isProduction,
     },
     {
       file: pkg.module,
       format: 'es',
-      sourcemap: isProduction
-    }
+      sourcemap: isProduction,
+    },
   ],
   external: [
     ...Object.keys(pkg.dependencies || {}),
     // ...Object.keys(pkg.devDependencies || {}),
-    ...Object.keys(pkg.peerDependencies || {})
+    ...Object.keys(pkg.peerDependencies || {}),
   ],
   plugins: [
     commonjs(),
@@ -36,17 +35,19 @@ export default {
     svelte({
       compilerOptions: {
         // enable run-time checks when not in production
-        dev: !isProduction
+        dev: !isProduction,
       },
-      preprocess: autoPreprocess(svelteConfig.preprocessOptions)
+      preprocess: autoPreprocess(svelteConfig.preprocessOptions),
     }),
-    scss(),
+    scss({
+      output: pkg.style,
+    }),
     resolve({
       browser: true,
-      dedupe: ['svelte']
-    })
+      dedupe: ['svelte'],
+    }),
   ],
   watch: {
-    clearScreen: false
-  }
+    clearScreen: false,
+  },
 }

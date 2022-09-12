@@ -22,7 +22,7 @@
     path: [],
     parentId: null,
     circularOfId: null,
-    children: []
+    children: [],
   }
   const defaultRecursionOpts = `{
   maxDepth: 16,
@@ -192,7 +192,7 @@
         } else {
           parsedRecursionOpts = {
             mapChildren: mapDocDeltaChildren,
-            shouldExpandNode: () => true
+            shouldExpandNode: () => true,
           }
         }
         break

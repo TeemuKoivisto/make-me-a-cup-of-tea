@@ -25,6 +25,6 @@ export default (on: Cypress.PluginEvents, config: Cypress.PluginConfigOptions) =
     shouldSkip(value) {
       if (value != null) shouldSkip = value
       return shouldSkip
-    }
+    },
   })
 }

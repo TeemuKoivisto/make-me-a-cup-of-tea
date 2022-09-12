@@ -8,7 +8,6 @@
     "cs": "changeset && git add .changeset",
     "ci:version": "changeset version",
     "ci:publish": "changeset publish && git push --follow-tags",
-    "ci:publish2": "pnpm --filter \"./packages/**\" --no-git-checks publish",
     "prepare": "husky install"
   },
   "engines": {

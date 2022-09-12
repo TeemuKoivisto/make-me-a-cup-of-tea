@@ -13,16 +13,16 @@ export default {
     trailingSlash: 'never',
     paths: {
       // For Github pages deployment, locally with preview favicon points to wrong path
-      base: DEPLOY_TO_GH ? '/svelte-tree-view' : ''
+      base: DEPLOY_TO_GH ? '/svelte-tree-view' : '',
     },
     files: {
       routes: './src/routes',
-      lib: './src/lib'
+      lib: './src/lib',
     },
     adapter: adapter({
       // default options are shown
       pages: 'build',
-      assets: 'build'
-    })
-  }
+      assets: 'build',
+    }),
+  },
 }

@@ -7,7 +7,7 @@ it('Should show functioning log & copy buttons', () => {
       cy.stub(win.console, 'info').as('consoleInfo')
       cy.stub(win.console, 'error').as('consoleError')
       cy.stub(win.navigator.clipboard, 'writeText').as('write')
-    }
+    },
   })
   // Wait for svelte-kit to SSR the page
   cy.get('#showLogButton').wait(2000).click()
