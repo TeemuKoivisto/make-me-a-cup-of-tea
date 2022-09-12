@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/tree-view
 
+## 0.0.7
+
+### Patch Changes
+
+- 1da3ca3: pkg: add description
+
 ## 0.0.6
 
 ### Patch Changes
