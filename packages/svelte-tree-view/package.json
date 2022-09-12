@@ -17,29 +17,6 @@
     },
     "./package.json": "./package.json"
   },
-  "files": [
-    "package",
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TeemuKoivisto/svelte-tree-view.git"
-  },
-  "bugs": {
-    "url": "https://github.com/TeemuKoivisto/svelte-tree-view/issues"
-  },
-  "keywords": [
-    "svelte",
-    "tree-view",
-    "json-tree",
-    "typescript",
-    "tree",
-    "json",
-    "base16",
-    "theme"
-  ],
   "scripts": {
     "install": "svelte-kit sync",
     "build": "yarn build:pkg && yarn build:dist",
@@ -82,5 +59,31 @@
     "vitest": "^0.23.1",
     "vite": "^3.1.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": [
+    "package",
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeemuKoivisto/svelte-tree-view.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TeemuKoivisto/svelte-tree-view/issues"
+  },
+  "keywords": [
+    "svelte",
+    "tree-view",
+    "json-tree",
+    "typescript",
+    "tree",
+    "json",
+    "base16",
+    "theme"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
