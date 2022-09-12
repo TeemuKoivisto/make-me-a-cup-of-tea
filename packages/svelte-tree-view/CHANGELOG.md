@@ -1,5 +1,11 @@
 # @make-me-a-cup-of-tea/svelte-tree-view
 
+## 1.4.2
+
+### Patch Changes
+
+- ee77a80: ci: see whether new version is set as latest release
+
 ## 1.4.1
 
 ### Patch Changes
